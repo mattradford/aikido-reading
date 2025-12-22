@@ -12,7 +12,7 @@ BRANCH="main"
 
 echo "Fetching and pulling latest changes for branch: $BRANCH"
 git -C "$REPO_DIR" fetch --all --prune
-git -C "$REPO_DIR" pull --rebase origin "$BRANCH"
+git -C "$REPO_DIR" pull origin "$BRANCH"
 
 git -C "$REPO_DIR" add -A
 
